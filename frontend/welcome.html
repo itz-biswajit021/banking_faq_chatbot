@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome | FinFAQ Chatbot</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #4b2f63, #2e1a3c);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .welcome-gif {
+      width: 270px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 600;
+      text-shadow: 0px 0px 8px rgba(255,255,255,0.3);
+    }
+
+    .start-btn {
+      margin-top: 25px;
+      padding: 14px 40px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      background: #1BD6A4;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0px 0px 15px rgba(27, 214, 164, 0.6);
+    }
+
+    .start-btn:hover {
+      background-color: #17b692;
+      box-shadow: 0px 0px 25px rgba(27, 214, 164, 0.9);
+      transform: scale(1.07);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Replace this GIF with your own welcome.gif in assets folder -->
+    <img src="assets/welcome.gif" alt="Welcome Animation" class="welcome-gif" />
+
+    <h1>Welcome to FinFAQ – Your Smart Banking Assistant</h1>
+
+    <button class="start-btn" onclick="startChat()">
+      Start Chat
+    </button>
+  </div>
+
+  <script>
+    function startChat() {
+      // Smooth redirection to chatbot UI
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

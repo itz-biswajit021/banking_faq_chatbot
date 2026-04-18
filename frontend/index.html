@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bank Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="header-left">
+        <img src="assets/ai-chatbot.png" alt="Logo" class="logo" />
+        <h2>FinFAQ</h2>
+      </div>
+      <button id="clearBtn">CLEAR</button>
+      <button id="toggleTTS">Toggle Audio</button>
+
+    </header>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="input-area">
+      <img src="assets/mic-microphone-record-sound-svgrepo-com.svg" id="micBtn" class="icon-btn" title="Voice Input" />
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button id="sendBtn" class="send-button">
+            <span>SEND</span>
+            <img src="assets/send-alt-svgrepo-com.svg" alt="Send Icon" class="icon-btn" />
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
